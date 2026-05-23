@@ -4,7 +4,3 @@ dockerfilePath = "Dockerfile"
 
 [deploy]
 restartPolicyType = "always"
-
-[networking.serviceDomains]
-"primary" = { port = 8080 }
-"webhook" = { port = 8644 }
