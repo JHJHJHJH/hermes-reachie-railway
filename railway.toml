@@ -5,6 +5,10 @@ dockerfilePath = "Dockerfile"
 [deploy]
 restartPolicyType = "always"
 
-[networking.serviceDomains]
-"<hasDomain>" = { port = 8080 }
-"<hasDomain>" = { port = 8644 }
+[[networking.serviceDomains]]
+domain = "<hasDomain>"
+port = 8080
+
+[[networking.serviceDomains]]
+domain = "<hasDomain>"
+port = 8644
