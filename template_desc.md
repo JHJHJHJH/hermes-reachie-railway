@@ -1,7 +1,7 @@
-## Template Titles
+## Titles
 
-**Railway Title:** `Hermes Agent`
-**Railway Description:** `Hermes Agent `
+**Railway Title:** `Reachie - A Hermes Agent`
+**Railway Description:** `Reachie - A Hermes Agent `
 **Spreadsheet Title:** `Hermes Agent (Open-Source Self-Improving AI Agent & Automation Platform)`
 **GitHub Description:** `Hermes Agent — self-improving AI agent by Nous Research. Deploy on Railway with one click.`
 
@@ -52,24 +52,6 @@ A managed Hermes Agent service on Railway requires the official Docker image wit
 ### Implementation Details for Hermes Agent (Using Nous-Hermes official docker image)
 
 This template runs the official `nousresearch/hermes-agent` Docker image with a custom entrypoint that starts both the messaging gateway and the WebUI dashboard. The dashboard serves on the configured PORT for web access. Key envs include `PORT` and `HERMES_HOME`. LLM provider keys and channel tokens are configured through the WebUI after deployment.
-
-## How does Hermes AI compare against other AI Agent platforms
-
-### Hermes Agent vs Open WebUI (Open WebUI Alternative)
-* **Self-Improving:** Hermes Agent creates skills from experience with Honcho user modeling. OpenWebUI is a static chat interface with no learning loop.
-* **Multi-Channel:** Native Telegram, Discord, Slack, WhatsApp, and WeChat gateways built in. Open WebUI is browser-only without messaging.
-
-### Hermes Agent vs ChatGPT (ChatGPT Alternative)
-* **Hermes AI Learning:** Hermes Agent creates skills from experience and improves autonomously. ChatGPT has no persistent learning between sessions.
-* **Model Freedom:** Use any LLM — OpenRouter, Nous-Hermes models, NVIDIA NIM, or self-hosted. ChatGPT locks you into OpenAI only.
-
-### Hermes Agent vs Auto-GPT (Auto-GPT Alternative)
-* **Persistent Skills:** Hermes Agent builds skills and Honcho memory across sessions. Auto-GPT starts fresh each run with no retention.
-* **Termux Support:** Run Hermes Agent on Android via Termux for mobile AI. Auto-GPT requires a full desktop environment.
-
-### Hermes Agent vs CrewAI (CrewAI Alternative)
-* **Autonomy:** Hermes Agent runs independently with built-in cron scheduling and self-improvement. CrewAI requires manual orchestration for each task.
-* **WebUI Dashboard:** Single Docker image with built-in gateway and WebUI. CrewAI needs custom infrastructure for persistent deployment.
 
 ## How to use Hermes Agent (the OSS Hermes AI platform)?
 
