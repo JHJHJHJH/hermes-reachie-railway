@@ -31,7 +31,7 @@ docker run --rm -it --env-file .env -p 9119:9119 hermes-reachie
 3. With the container running on port 9119, start a tunnel:
 
    ```bash
-   ngrok http 9119
+   ngrok http --url=gala-unrecipient-immutably.ngrok-free.app 9119
    ```
 
 4. Copy the `https://<subdomain>.ngrok-free.app` forwarding URL from the ngrok output and use it as the webhook URL for any external service pointing at your local server.
